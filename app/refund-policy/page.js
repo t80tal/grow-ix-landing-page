@@ -3,9 +3,9 @@ import React from 'react';
 import { TrendingUp, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Refund Policy'
-};
+// export const metadata = {
+//   title: 'Refund Policy'
+// };
 
 export default function RefundPolicy() {
   return (

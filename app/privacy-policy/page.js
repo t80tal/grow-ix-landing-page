@@ -3,9 +3,9 @@ import React from 'react';
 import { TrendingUp, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Privacy Policy'
-};
+// export const metadata = {
+//   title: 'Privacy Policy'
+// };
 
 export default function PrivacyPolicy() {
   return (
