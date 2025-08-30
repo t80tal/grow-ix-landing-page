@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import { TrendingUp, Mail, Phone, MapPin } from 'lucide-react';
 import Link from 'next/link';
