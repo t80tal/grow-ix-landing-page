@@ -1,7 +1,7 @@
 import React from 'react';
 import { TrendingUp, ArrowLeft, ExternalLink, Search, Filter } from 'lucide-react';
 import Link from 'next/link';
-import PortfolioClient from './portfolio-client';
+import PortfolioClient from './portfolio-client.jsx';
 
 export const metadata = {
     title: 'Portfolio - Our Success Stories',
