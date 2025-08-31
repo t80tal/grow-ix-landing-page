@@ -87,7 +87,12 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <div className="font-semibold text-slate-900">Email Us</div>
-                  <div className="text-slate-600">hello@growix.com</div>
+                  <a 
+                    href="mailto:support@grow-ix.com" 
+                    className="text-slate-600 no-underline hover:underline hover:cursor-pointer"
+                  >
+                    support@grow-ix.com
+                  </a>
                 </div>
               </div>
 
@@ -97,7 +102,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <div className="font-semibold text-slate-900">Call Us</div>
-                  <div className="text-slate-600">+1 (555) 123-4567</div>
+                  <div className="text-slate-600">Coming Soon...</div>
                 </div>
               </div>
 

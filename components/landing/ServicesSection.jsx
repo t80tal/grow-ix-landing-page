@@ -40,7 +40,7 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white" id="services">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <motion.div 
