@@ -65,7 +65,6 @@ const nextConfig = {
     // Performance optimizations
     experimental: {
         scrollRestoration: true,
-        optimizeCss: true,
     },
 
     // Webpack optimizations for faster builds and better performance
@@ -74,42 +73,33 @@ const nextConfig = {
         if (!dev) {
             // Tree shaking optimizations
             config.optimization.usedExports = true;
+            
+            // Bundle analyzer for production builds (optional)
             config.optimization.providedExports = true;
-            
-            // Code splitting optimizations
-            config.optimization.splitChunks = {
-                ...config.optimization.splitChunks,
-                chunks: 'all',
-                cacheGroups: {
-                    ...config.optimization.splitChunks.cacheGroups,
-                    vendor: {
-                        test: /[\\/]node_modules[\\/]/,
-                        name: 'vendors',
-                        chunks: 'all',
-                        priority: 10,
-                    },
-                    common: {
-                        name: 'common',
-                        minChunks: 2,
-                        chunks: 'all',
-                        priority: 5,
-                        reuseExistingChunk: true,
-                        enforce: true,
-                    },
-                },
-            };
-            
-            // Minimize bundle size
-            config.optimization.minimize = true;
         }
 
         return config;
     },
     
+    // Enable static optimization
+    trailingSlash: false,
+    
     // Output configuration for better SEO
     generateEtags: true,
 
-    // Remove redirects and rewrites for static export compatibility
+    // Redirects for SEO (if needed)
+    async redirects() {
+        return [
+            // Add any necessary redirects here
+        ];
+    },
+
+    // Rewrites for clean URLs (if needed)
+    async rewrites() {
+        return [
+            // Add any URL rewrites here
+        ];
+    },
 };
 
 module.exports = nextConfig;

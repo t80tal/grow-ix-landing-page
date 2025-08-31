@@ -149,33 +149,13 @@ export default function RootLayout({ children }) {
                 <link rel="manifest" href="/manifest.json" />
                 <link rel="apple-touch-icon" href="/favicon.svg" />
                 <meta name="theme-color" content="#2563eb" />
-                
-                {/* Performance optimizations */}
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <link rel="dns-prefetch" href="//www.google-analytics.com" />
-                <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-                
-                {/* Preload critical resources */}
-                <link rel="preload" href="/favicon.svg" as="image" type="image/svg+xml" />
-                <link rel="modulepreload" href="/_next/static/chunks/main.js" />
-                
-                {/* Critical CSS inline */}
-                <style dangerouslySetInnerHTML={{
-                    __html: `
-                        html{line-height:1.15;-webkit-text-size-adjust:100%}
-                        body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif}
-                        *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid}
-                        img{max-width:100%;height:auto}
-                    `
-                }} />
-
+                <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
             </head>
-            <body className="antialiased text-white bg-blue-900" suppressHydrationWarning={true}>
+            <body className="antialiased text-white bg-blue-900">
                 <main className="grow">{children}</main>
             </body>
         </html>

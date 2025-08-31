@@ -39,16 +39,13 @@ export default function AboutSection() {
               <p>
                 With over 5 years of experience and 500+ successful projects, we've mastered the art 
                 and science of turning visitors into customers. Our SEO-first approach ensures your 
-                landing pages not only convert but also rank higher in search results. 
-                <a href="/portfolio" className="text-blue-600 hover:text-blue-700 underline font-medium">View our portfolio</a> to see examples of our work.
+                landing pages not only convert but also rank higher in search results.
               </p>
 
               <p>
                 Every project begins with understanding your unique business goals, target audience, 
                 and competitive landscape. We then craft a custom strategy that maximizes both user 
-                experience and search engine visibility. Learn more about our 
-                <a href="#services" onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-blue-600 hover:text-blue-700 underline font-medium cursor-pointer">comprehensive services</a> 
-                and how we can help transform your business.
+                experience and search engine visibility.
               </p>
             </div>
 

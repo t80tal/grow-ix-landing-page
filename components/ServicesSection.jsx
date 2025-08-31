@@ -59,8 +59,7 @@ export default function ServicesSection() {
           </h2>
           
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            From design to optimization, we provide end-to-end solutions that turn your landing pages into powerful revenue generators. 
-            <a href="/portfolio" className="text-blue-600 hover:text-blue-700 underline font-medium">See our success stories</a> and discover how we can help grow your business.
+            From design to optimization, we provide end-to-end solutions that turn your landing pages into powerful revenue generators.
           </p>
         </motion.div>
 

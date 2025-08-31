@@ -56,9 +56,7 @@ export default function TestimonialsSection() {
           </h2>
           
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. See how we've helped businesses like yours achieve remarkable growth. 
-            <a href="/portfolio" className="text-blue-600 hover:text-blue-700 underline font-medium">View more success stories</a> or 
-            <a href="#contact-form" onClick={(e) => { e.preventDefault(); document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-blue-600 hover:text-blue-700 underline font-medium cursor-pointer">start your project today</a>.
+            Don't just take our word for it. See how we've helped businesses like yours achieve remarkable growth.
           </p>
         </motion.div>
 
