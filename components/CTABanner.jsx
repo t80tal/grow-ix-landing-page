@@ -38,7 +38,9 @@ export default function CTABanner() {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-blue-100 mb-12 leading-relaxed max-w-3xl mx-auto">
-            Join 500+ successful businesses who've increased their conversions by 3.2x with our proven approach.
+            Join 500+ successful businesses who've increased their conversions by 3.2x with our proven approach. 
+            <a href="/portfolio" className="text-white hover:text-blue-100 underline font-medium">Check out our portfolio</a> to see real results, or learn about our 
+            <a href="#services" onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-white hover:text-blue-100 underline font-medium cursor-pointer">complete service offerings</a>.
           </p>
 
           {/* CTA Buttons */}

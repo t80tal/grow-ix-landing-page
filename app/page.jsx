@@ -1,12 +1,36 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import HeroSection from '../components/HeroSection';
 import ValueProposition from '../components/ValueProposition';
-import AboutSection from '../components/AboutSection';
-import ServicesSection from '../components/ServicesSection';
-import TestimonialsSection from '../components/TestimonialsSection';
-import CTABanner from '../components/CTABanner';
-import ContactForm from '../components/ContactForm';
-import Footer from '../components/Footer';
+
+// Lazy load components that are not immediately visible
+const AboutSection = dynamic(() => import('../components/AboutSection'), {
+    loading: () => <div className="min-h-[400px] bg-slate-50 animate-pulse"></div>
+});
+const ServicesSection = dynamic(() => import('../components/ServicesSection'), {
+    loading: () => <div className="min-h-[600px] bg-white animate-pulse"></div>
+});
+const TestimonialsSection = dynamic(() => import('../components/TestimonialsSection'), {
+    loading: () => <div className="min-h-[500px] bg-slate-50 animate-pulse"></div>
+});
+const CTABanner = dynamic(() => import('../components/CTABanner'), {
+    loading: () => <div className="min-h-[400px] bg-blue-600 animate-pulse"></div>
+});
+const ResourcesSection = dynamic(() => import('../components/ResourcesSection'), {
+    loading: () => <div className="min-h-[600px] bg-slate-50 animate-pulse"></div>
+});
+const ContactForm = dynamic(() => import('../components/ContactForm'), {
+    loading: () => <div className="min-h-[500px] bg-white animate-pulse"></div>
+});
+const Footer = dynamic(() => import('../components/Footer'), {
+    loading: () => <div className="min-h-[300px] bg-slate-900 animate-pulse"></div>
+});
+const SocialShare = dynamic(() => import('../components/SocialShare'), {
+    loading: () => <div className="h-20 bg-white animate-pulse"></div>
+});
+const ContentStrategy = dynamic(() => import('../components/ContentStrategy'), {
+    loading: () => <div className="min-h-[600px] bg-slate-900 animate-pulse"></div>
+});
 
 export const metadata = {
     title: 'High-Converting Landing Pages & SEO Optimization Services',
@@ -101,6 +125,23 @@ export default function Home() {
 
             {/* CTA Banner */}
             <CTABanner />
+
+            {/* Resources Section */}
+            <ResourcesSection />
+
+            {/* Social Sharing Section */}
+            <section className="py-12 bg-white">
+                <div className="max-w-4xl mx-auto px-6 text-center">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-8">Help Others Discover High-Converting Landing Pages</h2>
+                    <SocialShare 
+                        className="flex justify-center"
+                        showTitle={false}
+                    />
+                </div>
+            </section>
+
+            {/* Content Strategy Section */}
+            <ContentStrategy />
 
             {/* Contact Form */}
             <ContactForm />

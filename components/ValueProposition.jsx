@@ -49,7 +49,9 @@ export default function ValueProposition() {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            We don't just build landing pages - we create conversion machines that turn your traffic into revenue.
+            We don't just build landing pages - we create conversion machines that turn your traffic into revenue. 
+            Ready to get started? <a href="#contact-form" onClick={(e) => { e.preventDefault(); document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-blue-600 hover:text-blue-700 underline font-medium cursor-pointer">Contact us today</a> 
+            {" "}or <a href="/portfolio" className="text-blue-600 hover:text-blue-700 underline font-medium">explore our portfolio</a>.
           </p>
         </motion.div>
 
