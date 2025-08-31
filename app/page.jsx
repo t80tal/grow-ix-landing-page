@@ -1,12 +1,12 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection.jsx';
-import ValueProposition from '../components/ValueProposition.jsx';
-import AboutSection from '../components/AboutSection.jsx';
-import ServicesSection from '../components/ServicesSection.jsx';
-import TestimonialsSection from '../components/TestimonialsSection.jsx';
-import CTABanner from '../components/CTABanner.jsx';
-import ContactForm from '../components/ContactForm.jsx';
-import Footer from '../components/Footer.jsx';
+import HeroSection from '../components/HeroSection';
+import ValueProposition from '../components/ValueProposition';
+import AboutSection from '../components/AboutSection';
+import ServicesSection from '../components/ServicesSection';
+import TestimonialsSection from '../components/TestimonialsSection';
+import CTABanner from '../components/CTABanner';
+import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'High-Converting Landing Pages & SEO Optimization Services',
