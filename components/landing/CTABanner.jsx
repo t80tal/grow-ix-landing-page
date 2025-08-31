@@ -42,24 +42,27 @@ export default function CTABanner() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            {/* <Button 
+            {/* Contact Button */}
+            <button 
               onClick={scrollToContact}
-              className="bg-white text-blue-600 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
-              size="lg"
+              className="bg-white text-blue-600 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center"
             >
               <Rocket className="mr-2 w-6 h-6 group-hover:scale-110 transition-transform" />
               Get Your Landing Page Now
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            </button>
             
-            <Button 
-              variant="outline" 
-              className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-medium rounded-xl backdrop-blur-sm transition-all duration-300"
-              size="lg"
+            {/* Portfolio Button */}
+            <button 
+              onClick={() => window.location.href = '/portfolio'}
+              className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-medium rounded-xl backdrop-blur-sm transition-all duration-300 group flex items-center"
             >
+              <Star className="mr-2 w-5 h-5 group-hover:rotate-12 transition-transform" />
               View Our Portfolio
-            </Button> */}
+            </button>
           </div>
+
+
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-3 gap-8 text-center text-white/80">
