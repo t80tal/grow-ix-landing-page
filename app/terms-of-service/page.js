@@ -1,11 +1,25 @@
-"use client";
 import React from 'react';
 import { TrendingUp, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-// export const metadata = {
-//   title: 'Terms of Service'
-// };
+export const metadata = {
+    title: 'Terms of Service',
+    description: 'Grow IX Terms of Service - Read our terms and conditions for using our landing page creation and SEO optimization services.',
+    keywords: 'terms of service, terms and conditions, user agreement, Grow IX, landing pages, SEO services',
+    alternates: {
+        canonical: '/terms-of-service'
+    },
+    openGraph: {
+        title: 'Terms of Service - Grow IX',
+        description: 'Read the terms and conditions for using Grow IX landing page and SEO services.',
+        url: 'https://grow-ix.com/terms-of-service',
+        type: 'website'
+    },
+    robots: {
+        index: true,
+        follow: true
+    }
+};
 
 export default function TermsOfService() {
   return (

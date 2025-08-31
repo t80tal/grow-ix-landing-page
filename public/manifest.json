@@ -1,0 +1,21 @@
+{
+  "name": "Grow IX - Landing Pages & SEO Experts",
+  "short_name": "Grow IX",
+  "description": "Transform your business with high-converting landing pages and expert SEO optimization services. 500+ projects completed with 3.2x average conversion boost.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "marketing"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { Globe, Search, BarChart, PenTool, CheckCircle, ArrowRight } from 'lucide-react';
 // import { Button } from "@/components/ui/button";

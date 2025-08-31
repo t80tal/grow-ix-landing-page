@@ -1,11 +1,25 @@
-"use client";
 import React from 'react';
 import { TrendingUp, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-// export const metadata = {
-//   title: 'Privacy Policy'
-// };
+export const metadata = {
+    title: 'Privacy Policy',
+    description: 'Grow IX Privacy Policy - Learn how we collect, use, and protect your personal information when using our landing page and SEO services.',
+    keywords: 'privacy policy, data protection, personal information, Grow IX, landing pages, SEO services',
+    alternates: {
+        canonical: '/privacy-policy'
+    },
+    openGraph: {
+        title: 'Privacy Policy - Grow IX',
+        description: 'Learn how Grow IX protects your privacy and handles your personal information.',
+        url: 'https://grow-ix.com/privacy-policy',
+        type: 'website'
+    },
+    robots: {
+        index: true,
+        follow: true
+    }
+};
 
 export default function PrivacyPolicy() {
   return (

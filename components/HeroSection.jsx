@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { ArrowRight, Play, TrendingUp, Eye } from 'lucide-react';
 import Link from 'next/link';

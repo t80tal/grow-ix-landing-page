@@ -1,11 +1,25 @@
-"use client";
 import React from 'react';
 import { TrendingUp, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-// export const metadata = {
-//   title: 'Refund Policy'
-// };
+export const metadata = {
+    title: 'Refund Policy',
+    description: 'Grow IX Refund Policy - Learn about our refund process and eligibility for landing page and SEO optimization services.',
+    keywords: 'refund policy, refund eligibility, money back guarantee, Grow IX, landing pages, SEO services',
+    alternates: {
+        canonical: '/refund-policy'
+    },
+    openGraph: {
+        title: 'Refund Policy - Grow IX',
+        description: 'Learn about Grow IX refund policy and how to request a refund for our services.',
+        url: 'https://grow-ix.com/refund-policy',
+        type: 'website'
+    },
+    robots: {
+        index: true,
+        follow: true
+    }
+};
 
 export default function RefundPolicy() {
   return (
