@@ -65,6 +65,7 @@ const nextConfig = {
     // Performance optimizations
     experimental: {
         scrollRestoration: true,
+        optimizeCss: true,
     },
 
     // Webpack optimizations for faster builds and better performance
