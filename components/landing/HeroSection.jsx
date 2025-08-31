@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowRight, Play, TrendingUp } from 'lucide-react';
+import { ArrowRight, Play, TrendingUp, Eye } from 'lucide-react';
+import Link from 'next/link';
 // import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -62,21 +63,22 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              {/* <Button 
+              {/* Primary CTA Button */}
+              <button 
                 onClick={scrollToContact}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group flex items-center justify-center min-w-[250px]"
               >
                 Get Your Landing Page
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </button>
               
-              <Button 
-                variant="outline" 
-                className="border-2 border-slate-300 px-8 py-4 text-lg font-medium rounded-xl hover:bg-slate-50 transition-all duration-300 group"
-              >
-                <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-                Watch Demo
-              </Button> */}
+              {/* Secondary CTA Button */}
+              <Link href="/portfolio">
+                <button className="border-2 border-slate-300 hover:border-slate-400 bg-white hover:bg-slate-50 text-slate-700 px-8 py-4 text-lg font-medium rounded-xl transition-all duration-300 group flex items-center justify-center min-w-[200px] shadow-sm hover:shadow-md">
+                  <Eye className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                  View Our Work
+                </button>
+              </Link>
             </motion.div>
 
             {/* Stats */}
